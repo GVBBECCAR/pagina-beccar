@@ -56,3 +56,11 @@ body{
 .carrousel .punto.activo{
     background-color: #751018;
 }
+
+/*********Estilos para responsivo**********/
+@media screen and (max-width: 700px){
+    .carrousel .punto{
+        width: 1em;
+        height: 1em;
+    }
+}
