@@ -61,6 +61,18 @@ section{
   transition: 0.3s ease;
 }
 
+.sectionwp{
+  color: var(--white-color);
+  background: var(--section-bg-color);
+  padding: 35px;
+  transition: 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 75vw;
+}
+
 /*======= Header =======*/
 header{
   z-index: 999;
@@ -105,15 +117,13 @@ header .nav-bar{
 
 .nav-logo a{
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid transparent;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-logo a img{
-  border: 1px solid transparent;
-  display: block;
-  margin: auto;
   height: 50%;
 }
 
@@ -139,6 +149,7 @@ header .nav-bar{
   width: 80%;
   height: 100%;
   align-items: center;
+  justify-content: end;
 }
 
 .navigation .nav-items ul li{
@@ -306,6 +317,10 @@ header .nav-bar{
   transition-property: transform, opacity;
 }
 
+.swiper-slide-active .text-content a{
+  text-decoration: none;
+}
+
 .swiper-slide .text-content .read-btn i{
   font-size: 1.6em;
   transition: 0.3s ease;
@@ -389,7 +404,6 @@ header .nav-bar{
 
 .container-footer-all{
   width: 100%;
-  margin: auto;
   padding: 0 200px;
 }
 
@@ -397,31 +411,30 @@ header .nav-bar{
 .container-body{
   display: flex;
   justify-content: space-between;
-
+  align-items: center;
 }
 
-.column-1{
-  max-width: auto;
+.column{
+  width: 25%;
   padding: 1em;
-}
-
-.column-1 .row_f img{
-  width: 110px;
-  height: 38px;
-  display: block;
-  margin: auto;
-  
-}
-
-.column-1 .row_f{
-  margin-top: 10px;
   display: flex;
-  font-size: 1em;
-
-
+  align-items: center;
+  justify-content: center;
 }
 
-.column-1 .row_f a{
+.column .row_f{
+  display: flex;
+  font-size: 0.5em;
+  align-items: center;
+  justify-content: center;
+}
+
+.column .row_f img{
+  width: 100%;
+  height: 50px;
+}
+
+.column .row_f a{
   color: var(--white-color);
   text-align: left;
   text-decoration:none;
@@ -538,6 +551,7 @@ header .nav-bar{
 /*-----------------------REDES SOCIALES-------------------------------*/
 .container-redes{
     width: 100%;
+    margin-bottom: 15px;
 }
 
 .redes{
@@ -558,9 +572,8 @@ header .nav-bar{
   background: #343D4C;
   display: flex;
   padding: 10px;
-  justify-content: space-between;
- 
-  
+  align-items: center;
+  justify-content: center;
 }
 
 .copyright{
@@ -590,7 +603,8 @@ header .nav-bar{
   max-width: 1920px;
   margin: auto;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
 }
 
 /************MAPA RESPONSIVO********************/
@@ -723,8 +737,14 @@ header .nav-bar{
 }
 
 /**********NOTICIAS*************/
+
+.background-base{
+  width: 100%;
+  background: var(--section-bg-color);
+}
+
 .news{
-  width: 75vw;
+  width: 75%;
   height: 80vh;
 }
 
@@ -734,9 +754,6 @@ header .nav-bar{
   width: 66%;
   margin-right: 2%;
   box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 10px;
 }
 
@@ -765,7 +782,11 @@ header .nav-bar{
 }
 
 .title-news{
+  width: 75%;
   margin-top: 2%;
+  display: flex;  
+  justify-content: start;
+  align-items: start;
 }
 
 .title-news h2{
@@ -775,6 +796,7 @@ header .nav-bar{
 .news-more{
   text-align: center;
   margin-top: 2%;
+  width: 100%;
 }
 
 .news-figure figure{
@@ -801,15 +823,15 @@ header .nav-bar{
   visibility: hidden;
   transition: all 1s ease;
   opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .news-figure figure:hover > .news-text{
   opacity: 1;
   visibility: visible;
-}
-
-.news-figure figure:hover > .news-text h3{
-  margin-top: 20%;
 }
 
 .news-figure figure:hover > img{
@@ -961,34 +983,34 @@ header .nav-bar{
 
 
 /*******LOW-ENTRY********/
-#unit-info-general{
+.unit-info-general{
   background-image: url(../media/unidades/low-entry/general.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-#unit-info-interior{
+.unit-info-interior{
   background-image: url(../media/unidades/low-entry/interior1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: none;
 }
 
-#unit-info-exterior{
+.unit-info-exterior{
   background-image: url(../media/unidades/low-entry/exterior1.png);
   background-repeat: no-repeat;
   background-size: cover;
   display: none;
 }
 
-#unit-info-galeria{
+.unit-info-galeria{
   background-image: url(../media/unidades/low-entry/general.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: none;
 }
 
-#unit-info-ficha{
+.unit-info-ficha{
   background-image: url(../media/fondo3.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -996,34 +1018,139 @@ header .nav-bar{
 }
 
 /*******B340********/
-#unit-info-general-b340{
+.unit-info-general-b340{
   background-image: url(../media/unidades/b340/general.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-#unit-info-interior-b340{
+.unit-info-interior-b340{
   background-image: url(../media/unidades/b340/interior1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: none;
 }
 
-#unit-info-exterior-b340{
+.unit-info-exterior-b340{
   background-image: url(../media/unidades/b340/general.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: none;
 }
 
-#unit-info-galeria-b340{
+.unit-info-galeria-b340{
   background-image: url(../media/unidades/b340/general.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: none;
 }
 
-#unit-info-ficha-b340{
+.unit-info-ficha-b340{
+  background-image: url(../media/fondo3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: none;
+}
+
+/*******URVIABUS-MD********/
+.unit-info-general-urviabusmd{
+  background-image: url(../media/unidades/urviabus-md/general.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.unit-info-interior-urviabusmd{
+  background-image: url(../media/unidades/urviabus-md/interior1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: none;
+}
+
+.unit-info-exterior-urviabusmd{
+  background-image: url(../media/unidades/urviabus-md/general.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: none;
+}
+
+.unit-info-galeria-urviabusmd{
+  background-image: url(../media/unidades/urviabus-md/general.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: none;
+}
+
+.unit-info-ficha-urviabusmd{
+  background-image: url(../media/fondo3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: none;
+}
+
+/*******URBUS-G4********/
+.unit-info-general-urbusg4{
+  background-image: url(../media/unidades/urbus-g4/general.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.unit-info-interior-urbusg4{
+  background-image: url(../media/unidades/urviabus-md/interior1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: none;
+}
+
+.unit-info-exterior-urbusg4{
+  background-image: url(../media/unidades/urviabus-md/general.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: none;
+}
+
+.unit-info-galeria-urbusg4{
+  background-image: url(../media/unidades/urbus-g4/general.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: none;
+}
+
+.unit-info-ficha-urbusg4{
+  background-image: url(../media/fondo3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: none;
+}
+
+/*******URBi-G2********/
+.unit-info-general-urbig2{
+  background-image: url(../media/unidades/urbi-g2/general.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.unit-info-interior-urbig2{
+  background-image: url(../media/unidades/urbi-g2/interior.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: none;
+}
+
+.unit-info-exterior-urbig2{
+  background-image: url(../media/unidades/urbi-g2/exterior.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: none;
+}
+
+.unit-info-galeria-urbig2{
+  background-image: url(../media/unidades/urbi-g2/general.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: none;
+}
+
+.unit-info-ficha-urbig2{
   background-image: url(../media/fondo3.png);
   background-repeat: no-repeat;
   background-size: cover;
