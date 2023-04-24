@@ -828,7 +828,7 @@ header .nav-bar{
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
-  text-align: center;
+  text-align: justify;
   visibility: hidden;
   transition: all 1s ease;
   opacity: 0;
@@ -836,6 +836,7 @@ header .nav-bar{
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  padding: 2em;
 }
 
 .news-figure figure:hover > .news-text{
@@ -1010,7 +1011,7 @@ header .nav-bar{
   background: rgba(0, 0, 0, 0.25);
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  text-align: left;
+  text-align: justify;
 }
 
 .unit-info-description h2{
