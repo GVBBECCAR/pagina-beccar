@@ -1011,7 +1011,7 @@ header .nav-bar{
   background: rgba(0, 0, 0, 0.25);
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  text-align: left;
+  text-align: justify;
 }
 
 .unit-info-description h2{
