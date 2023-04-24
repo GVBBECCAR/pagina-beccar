@@ -1004,14 +1004,18 @@ header .nav-bar{
 }
 
 .unit-info-description{
+  padding: 2em;
   width: 50%;
   height: 50%;
   background: rgba(0, 0, 0, 0.25);
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  text-align: center;
+  text-align: left;
 }
 
+.unit-info-description h2{
+  text-align: left;
+}
 
 /*******LOW-ENTRY********/
 .unit-info-general{
@@ -1224,6 +1228,27 @@ header .nav-bar{
 }
 
 /*****************************/
+
+/*******Cultura empresarial********/
+.ce-container{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.info-ce{
+  width: 100%;
+  text-align: left;
+  padding: 2em;
+  margin-bottom: 2%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.info-ce h2{
+  text-align: left;
+}
 
 /*======= Media queries (max-width: 1100px) =======*/
 @media screen and (max-width: 1100px){
