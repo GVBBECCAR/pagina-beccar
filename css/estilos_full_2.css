@@ -175,6 +175,19 @@ header .nav-bar{
   background: rgba(0, 0, 0, 0.5);
 }
 
+/******** BTN ********/
+.btn{
+  border-radius: 10px;
+  background: var(--tinto);
+  padding: 1em;
+}
+
+.btn:hover{
+  background: white;
+  color: var(--tinto);
+  transition: 1s ease;
+}
+
 /*======= Home =======*/
 .home{
   min-height: 100vh;
@@ -815,7 +828,7 @@ header .nav-bar{
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
-  text-align: center;
+  text-align: justify;
   visibility: hidden;
   transition: all 1s ease;
   opacity: 0;
@@ -823,6 +836,7 @@ header .nav-bar{
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  padding: 2em;
 }
 
 .news-figure figure:hover > .news-text{
@@ -838,17 +852,25 @@ header .nav-bar{
 /**********EMPLEO*************/
 
 .work{
-  width: 75vw;
-  height: 40vh;
-  margin-top: 2%;
-  margin-bottom: 4%;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.work-imgs{
+  width: 80%;
+  height: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .work-img{
-  float: left;
-  height: 100%;
+  height: 70%;
   width: 32%;
-  margin-right: 2%;
   box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
 }
@@ -869,11 +891,15 @@ header .nav-bar{
   background-image: url(../media/empleo/623A9305-.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  margin-right: 0;
 }
 
-.work-title > a > h3{
+.work-title{
+  width: 100%;
+  height: 15%;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*****************************************/
@@ -979,14 +1005,18 @@ header .nav-bar{
 }
 
 .unit-info-description{
+  padding: 2em;
   width: 50%;
   height: 50%;
   background: rgba(0, 0, 0, 0.25);
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  text-align: center;
+  text-align: justify;
 }
 
+.unit-info-description h2{
+  text-align: left;
+}
 
 /*******LOW-ENTRY********/
 .unit-info-general{
@@ -1199,6 +1229,27 @@ header .nav-bar{
 }
 
 /*****************************/
+
+/*******Cultura empresarial********/
+.ce-container{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.info-ce{
+  width: 100%;
+  text-align: left;
+  padding: 2em;
+  margin-bottom: 2%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.info-ce h2{
+  text-align: left;
+}
 
 /*======= Media queries (max-width: 1100px) =======*/
 @media screen and (max-width: 1100px){
