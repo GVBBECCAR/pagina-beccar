@@ -1240,7 +1240,7 @@ header .nav-bar{
 
 .info-ce{
   width: 100%;
-  text-align: left;
+  text-align: justify;
   padding: 2em;
   margin-bottom: 2%;
   background: rgba(255, 255, 255, 0.1);
