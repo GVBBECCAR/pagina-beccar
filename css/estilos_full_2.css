@@ -123,6 +123,14 @@ header .nav-bar{
   height: 50%;
 }
 
+.navigation-responsive{
+  width: 69vw;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  display: none;
+}
+
 .navigation{
   display: flex;
   width: 69vw;
@@ -337,6 +345,27 @@ header .nav-bar{
 
 .swiper-slide .text-content .read-btn:hover i{
   transform: translateX(5px);
+}
+
+.swiper-slide{
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.index-fondo-1{
+  background-image: url(../media/e-urviabus-fondo.png);
+}
+
+.index-fondo-2{
+  background-image: url(../media/fondo2.png);
+}
+
+.index-fondo-3{
+  background-image: url(../media/fondo1.png);
+}
+
+.index-fondo-4{
+  background-image: url(../media/fondo3.png);
 }
 
 .dark-layer:before{
@@ -1208,14 +1237,14 @@ header .nav-bar{
 }
 
 .unit-info-exterior-eurviabus{
-  background-image: url(../media/unidades/e-urviabus/general.png);
+  background-image: url(../media/unidades/e-urviabus/exterior.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: none;
 }
 
 .unit-info-galeria-eurviabus{
-  background-image: url(../media/unidades/e-urviabus/general.png);
+  background-image: url(../media/e-urviabus-fondo.png);
   background-repeat: no-repeat;
   background-size: cover;
   display: none;
@@ -1359,6 +1388,10 @@ header .nav-bar{
     transition: 0.3s ease;
   }
 
+  .navigation-responsive{
+    display: flex;
+  }
+
   .navigation.active{
     visibility: visible;
     opacity: 1;
@@ -1377,6 +1410,25 @@ header .nav-bar{
     box-shadow: var(--box-shadow);
     transform: translateY(-200px);
     transition: 0.3s ease;
+  }
+
+  .navigation .nav-items ul{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+  }
+
+  .navigation .nav-items ul li{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navigation .nav-items ul li a{
+    color: var(--dark-color);
   }
 
   .navigation.active .nav-items{
@@ -1400,7 +1452,6 @@ header .nav-bar{
     font-size: 1.3em;
     margin-right: 5px;
   }
-  
 
   .swiper-slide .text-content .read-btn{
     font-size: 0.9em;
