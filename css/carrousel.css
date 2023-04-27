@@ -57,9 +57,23 @@ body{
 }
 
 /*********Estilos para responsivo**********/
-@media screen and (max-width: 700px){
+@media screen and (max-width: 785px){
+    .carrousel{
+        width: 95%;
+    }
+
+    .carrousel .img-carrousel{
+        width: calc(100% / 10 - 0.5em);
+    }
+
+    .carrousel .puntos{
+        padding: 0;
+    }
+
     .carrousel .punto{
-        width: 1em;
-        height: 1em;
+        padding: 0;
+        width: 15%;
+        height: 90%;
+        margin: 0.5em;
     }
 }
