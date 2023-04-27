@@ -1475,11 +1475,55 @@ header .nav-bar{
      display: block;
   }
 
+  .title-news h2{
+    text-align: center;
+  }
+
   .news{
     width: 95vw;
+    height: auto;
+  }
+
+  .news-principal{
+    width: 100%;
+    height: 25%;
+  }
+
+  .news-second{
+    margin-top: 5%;
+    width: 100%;
+    height: 25%;
+  }
+
+  .news-below{
+    margin-top: 5%;
+    width: 100%;
+    height: 25%;
+  }
+
+  .news-more{
+    margin-top: 15%;
+  }
+
+  .news-figure figure > .news-text{
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .news-figure figure > img{
+    filter: blur(5px);
+    transition: 1s ease;
   }
 
   /******Menú para unidades******/
+
+  .unit{
+    height: auto;
+  }
+  
+  .unit-menu{
+    width: 100%;
+  }
   
   .unit-menu ul{
     width: 60%;
@@ -1492,6 +1536,35 @@ header .nav-bar{
   
   .unit-menu h2{
     margin-top: 30%;
+  }
+
+  .unit-info{
+    width: 100%;
+    margin: 0;
+    height: 90vh;
+    background-size: cover;
+    background-position-x: center;
+  }
+
+  .unit-info-description{
+    display: none;
+  }
+
+  /*****Footer******/
+  .container-footer-all{
+    padding: 0 50px;
+  }
+
+  .container-body{
+    width: 100%;
+  }
+
+  .column{
+    width: 100%;
+  }
+
+  .column .row_f{
+    width: 100%;
   }
    
 }
